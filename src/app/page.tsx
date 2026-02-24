@@ -51,8 +51,10 @@ export default function Home() {
             {/* Feature 1 */}
             <Card className="border-0 shadow-sm overflow-hidden text-left hover:shadow-md transition-shadow">
               <div className="h-[140px] w-full bg-gray-200 relative">
-                {/* Gray placeholder representing the image slice */}
-                <div className="absolute inset-0 bg-slate-300"></div>
+                <div
+                  className="absolute inset-0 bg-cover bg-center"
+                  style={{ backgroundImage: "url('https://images.unsplash.com/photo-1580674285054-bed31e145f59?q=80&w=800&auto=format&fit=crop')" }}
+                />
                 <div className="absolute -bottom-4 left-4 w-10 h-10 bg-[#F1592A] rounded-lg flex items-center justify-center text-white border-4 border-white z-10">
                   <Truck className="w-5 h-5" />
                 </div>
@@ -68,7 +70,10 @@ export default function Home() {
             {/* Feature 2 */}
             <Card className="border-0 shadow-sm overflow-hidden text-left hover:shadow-md transition-shadow">
               <div className="h-[140px] w-full bg-gray-200 relative">
-                <div className="absolute inset-0 bg-slate-300"></div>
+                <div
+                  className="absolute inset-0 bg-cover bg-center"
+                  style={{ backgroundImage: "url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=800&auto=format&fit=crop')" }}
+                />
                 <div className="absolute -bottom-4 left-4 w-10 h-10 bg-[#3B2A82] rounded-lg flex items-center justify-center text-white border-4 border-white z-10">
                   <HeadphonesIcon className="w-5 h-5" />
                 </div>
@@ -84,7 +89,10 @@ export default function Home() {
             {/* Feature 3 */}
             <Card className="border-0 shadow-sm overflow-hidden text-left hover:shadow-md transition-shadow">
               <div className="h-[140px] w-full bg-gray-200 relative">
-                <div className="absolute inset-0 bg-slate-300"></div>
+                <div
+                  className="absolute inset-0 bg-cover bg-center"
+                  style={{ backgroundImage: "url('https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=800&auto=format&fit=crop')" }}
+                />
                 <div className="absolute -bottom-4 left-4 w-10 h-10 bg-[#F1592A] rounded-lg flex items-center justify-center text-white border-4 border-white z-10">
                   <ShieldCheck className="w-5 h-5" />
                 </div>
@@ -100,7 +108,10 @@ export default function Home() {
             {/* Feature 4 */}
             <Card className="border-0 shadow-sm overflow-hidden text-left hover:shadow-md transition-shadow">
               <div className="h-[140px] w-full bg-gray-200 relative">
-                <div className="absolute inset-0 bg-slate-300"></div>
+                <div
+                  className="absolute inset-0 bg-cover bg-center"
+                  style={{ backgroundImage: "url('https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=800&auto=format&fit=crop')" }}
+                />
                 <div className="absolute -bottom-4 left-4 w-10 h-10 bg-[#3B2A82] rounded-lg flex items-center justify-center text-white border-4 border-white z-10">
                   <Map className="w-5 h-5" />
                 </div>
