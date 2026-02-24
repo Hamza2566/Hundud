@@ -131,7 +131,11 @@ export default function BranchesPage() {
                                 <div
                                     className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-60 mix-blend-overlay"
                                     style={{
-                                        backgroundImage: "url('https://images.unsplash.com/photo-1524661135-423995f22d0b?w=800&q=80')"
+                                        // The screenshot shows a purple world map, representing the actual background element here
+                                        backgroundImage: "url('https://upload.wikimedia.org/wikipedia/commons/e/ec/World_map_blank_without_borders.svg')",
+                                        backgroundSize: '200%',
+                                        backgroundPosition: 'center',
+                                        filter: 'blur(1px) contrast(1.5) brightness(0.8)'
                                     }}
                                 />
                                 <div className="absolute inset-0 flex items-center justify-center">
@@ -168,13 +172,23 @@ export default function BranchesPage() {
                                 </div>
 
                                 <div className="flex gap-3 mb-5 mt-auto">
-                                    <Button className="flex-1 bg-[#25D366] hover:bg-[#20bd5a] text-white shadow-none font-semibold text-[14px] h-[42px] transition-colors rounded-[8px]">
+                                    <a
+                                        href={`https://wa.me/${branch.phone.replace(/[\s+]/g, '')}`}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="flex-1 bg-[#25D366] hover:bg-[#20bd5a] text-white shadow-none font-semibold text-[14px] h-[42px] transition-colors rounded-[8px] flex items-center justify-center"
+                                    >
                                         WhatsApp
-                                    </Button>
-                                    <Button className="flex-1 bg-[#F1592A] hover:bg-[#d64a20] text-white shadow-none font-semibold text-[14px] h-[42px] transition-colors flex items-center justify-center gap-2 rounded-[8px]">
+                                    </a>
+                                    <a
+                                        href={`https://maps.google.com/?q=${branch.coords.replace(/[A-Za-z°]/g, '').replace(' ', '')}`}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="flex-1 bg-[#F1592A] hover:bg-[#d64a20] text-white shadow-none font-semibold text-[14px] h-[42px] transition-colors flex items-center justify-center gap-2 rounded-[8px]"
+                                    >
                                         <ExternalLink className="w-4 h-4" />
                                         Map
-                                    </Button>
+                                    </a>
                                 </div>
 
                                 <div className="flex items-center justify-between text-[11px] text-gray-500 pt-1">
